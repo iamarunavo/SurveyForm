@@ -1,0 +1,130 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+#title {
+  text-align: center;
+}
+
+body {
+  background-image: url('purpleback.png');
+  background-size: cover;        /* Make the background image cover the entire page */
+  background-repeat: no-repeat;  /* Prevent the image from repeating */
+  background-attachment: fixed;  /* Fix the background image so it doesn’t scroll with the page */
+  background-position: center;   /* Center the background image */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5em;
+  padding: 20px;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+#survey-form {
+  text-align: left;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 10px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  
+  max-width: 800px; /* Max width to prevent it from being too wide on large screens */
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  margin-top: 20px;
+  font-size: 1.2em;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+textarea,
+input[type="submit"] {
+  width: 100%; /* Make both elements take up the full width of their container */
+  padding: 10px; /* Ensure consistent padding for both elements */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+input[type="submit"] {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: purple;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Optional: Make text input fields more readable */
+input::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+#name-label {
+  color: white; 
+  text-align: left;
+}
+
+#email-label {
+  color: white; 
+  text-align: left;
+}
+
+#number-label {
+  color: white; 
+}
+
+#hobby-label {
+  color: white; 
+}
+
+#activity-label {
+  color: white; 
+}
+
+#season-label {
+  color: white; 
+}
+
+#comments-label {
+  color: white; 
+}
+
+.submit {
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Hobbies and Interests Survey</h1>
+
+    <p id="description">Please answer the questions below to share more about your hobbies and interests.</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" required>
+        <br>
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" placeholder="yourname@example.com" required>
+        <br>
+
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" name="number" placeholder="Your Age" min="10" max="100" required>
+        <br>
+
+        <label for="dropdown" id="hobby-label">Select your favorite hobby</label>
+        <select id="dropdown" name="hobby" required>
+            <option value="Reading">Reading</option>
+            <option value="Traveling">Traveling</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Sports">Sports</option>
+            <option value="Music">Music</option>
+            <option value="Art">Art</option>
+            <option value="Gardening">Gardening</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <br>
+        <label for="favorite-activity" id="activity-label"><b>Favorite type of activity</b></label>
+        <br>
+        <label for="indoor">Indoor</label>
+        <br>
+        <input type="radio" id="indoor" name="activity" value="Indoor">
+        <br>
+        <label for="outdoor">Outdoor</label>
+        <br>
+        <input type="radio" id="outdoor" name="activity" value="Outdoor"> 
+        <br>
+
+        <label for="preferred-season" id="season-label"><b>Preferred season for activities</b></label>
+        <br>
+        <label for="spring">Spring</label>
+        <br>
+        <input id="spring" type="checkbox" name="season" value="Spring">
+        <br>
+        <label for="summer">Summer</label>
+        <br>
+        <input id="summer" type="checkbox" name="season" value="Summer">
+        <br>
+        <label for="fall">Fall</label>
+        <br>
+        <input id="fall" type="checkbox" name="season" value="Fall">
+        <br>
+        <label for="winter">Winter</label>
+        <br>
+        <input id="winter" type="checkbox" name="season" value="Winter">
+        <br>
+        
+
+        <label for="comments" id="comments-label">Additional comments</label>
+        <br>
+        <textarea id="comments" name="comments" placeholder="Share any additional thoughts or preferences"></textarea>
+        <br>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
